@@ -1,0 +1,44 @@
+# dependencies
+node_modules/
+
+# secrets & local state — regenerate with `npm run setup`, wipe with `npm run reset`
+**/.env
+**/.env.*
+!**/.env.example
+backend/.env
+backend/data/
+backend/secure-storage/
+.chain/
+deployments/
+
+# local demo artifacts (screen recordings, screenshots, scratch DBs/PDFs)
+demo/
+
+# build output & caches
+frontend/dist/
+frontend/dev-dist/
+blockchain/artifacts/
+blockchain/cache/
+contracts/artifacts/
+contracts/cache/
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+*.tsbuildinfo
+
+# key material
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+
+# logs & OS/editor cruft
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
